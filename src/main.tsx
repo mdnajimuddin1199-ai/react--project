@@ -4,6 +4,7 @@ import "./index.css";
 import Navbar from "./components/Nav";
 import Hero from "./components/Hero";
 import Technologies from "./components/technologies";
+import Footer from "./components/footer";
 
 const productdatapromis = async()=>{
 let res = await fetch("./data.json");
@@ -19,5 +20,6 @@ createRoot(document.getElementById("root")!).render(
     <Navbar></Navbar>
     <Hero></Hero>
     <Technologies productdata={productdata}></Technologies>
+    <Footer></Footer>
   </StrictMode>,
 );

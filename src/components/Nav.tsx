@@ -5,7 +5,8 @@ import logo from "../assets/logo-text.png";
 
 const Navbar = () => {
   return (
-    <nav className="container my-5 mx-auto">
+    <nav className="shadow">
+          <div className="container py-5 mx-auto sticky top-0  bg-white">
       <div className="flex items-center justify-between">
         <FaBars className="md:hidden text-3xl cursor-pointer" />
         <div className="">
@@ -25,7 +26,9 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+    </div>
     </nav>
+
   );
 };
 
