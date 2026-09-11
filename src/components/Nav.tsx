@@ -1,5 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import logo from "../assets/logo-text.png";
+ 
+// navbar complited 
 
 const Navbar = () => {
   return (
