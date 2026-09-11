@@ -1,3 +1,5 @@
+// this is thechnology component Productcard or stack bar made from it
+
 import { use, useState } from "react";
 import type { productsType } from "./interface";
 import Productcard from "./productcard";
