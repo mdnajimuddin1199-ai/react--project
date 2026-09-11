@@ -1,3 +1,4 @@
+// hero section complited
 import Benner from '../assets/banner-stack.png'
 
 function Hero() {
