@@ -1,3 +1,4 @@
+// this is Productcard its show for card
 import { IoMdStar } from "react-icons/io";
 import type { productsType } from "./interface";
 import { useState } from "react";
