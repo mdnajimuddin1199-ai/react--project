@@ -5,8 +5,8 @@ import logo from "../assets/logo-text.png";
 
 const Navbar = () => {
   return (
-    <nav className="shadow">
-          <div className="container py-5 mx-auto sticky top-0  bg-white">
+    <nav className="shadow sticky top-0">
+          <div className="container py-5 mx-auto   bg-white">
       <div className="flex items-center justify-between">
         <FaBars className="md:hidden text-3xl cursor-pointer" />
         <div className="">
