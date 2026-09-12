@@ -12,7 +12,7 @@ const YourStack = ({ setproducts, hendeldelete, alldelete }: stackprops) => {
     return (
       <div className="shadow  border border-gray-200 rounded-xl h-fit py-5 px-1">
         <h2 className="text-2xl text-center font-bold">Your Stack</h2>
-        <p className="text-center">{setproducts.length} Thchnology selected</p>
+        <p className="text-center"> no Thchnology selected</p>
         <p className="mx-3 shadow text-[1.1rem] font-semibold border border-dashed py-8 text-center rounded mt-5">
           Your stack is empty
         </p>

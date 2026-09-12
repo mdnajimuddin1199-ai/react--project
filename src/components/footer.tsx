@@ -2,8 +2,8 @@ import React from "react";
 import footerlogo from "../assets/logo-text.png";
 const Footer = () => {
   return (
-    <footer className="container mx-auto mt-30 mb-10">
-      <div className="grid grid-cols-1 md:grid-cols-4  ">
+    <footer className="bg-mist-100  pt-9 pb-5">
+      <div className="grid grid-cols-1 container mx-auto md:grid-cols-4  ">
         <div className="flex flex-col justify-center items-center gap-4">
           <img src={footerlogo} className="w-50" />
           <h5 className="block items-center text-center ">

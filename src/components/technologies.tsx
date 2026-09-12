@@ -4,6 +4,7 @@ import { use, useState } from "react";
 import type { productsType } from "./interface";
 import Productcard from "./productcard";
 import YourStack from "./yourstack";
+import { toast } from "react-toastify";
 interface productdata {
   productdata: Promise<productsType[]>;
 }
@@ -15,18 +16,20 @@ const Technologies = ({ productdata }: productdata) => {
     const exist = setproducts.find((p) => p.id === product.id);
     if (!exist) {
       setsetproducts([...setproducts, product]);
+      toast.success(`${product.name} added`);
     } else {
-      alert("you have already added");
+      toast("you have already added");
     }
   };
-  const hendeldelete = (stackproduct:productsType)=>{
-    const remaning = setproducts.filter(s=> s.id!==stackproduct.id)
-    setsetproducts(remaning)
-
-  }
-  const alldelete =()=>{
-    setsetproducts([])
-  }
+  const hendeldelete = (stackproduct: productsType) => {
+    const remaning = setproducts.filter((s) => s.id !== stackproduct.id);
+    setsetproducts(remaning);
+    toast.error(`${stackproduct.name} removed`);
+  };
+  const alldelete = () => {
+    setsetproducts([]);
+    toast.info("delete all")
+  };
 
   return (
     <section className="container mx-auto">
@@ -49,7 +52,11 @@ const Technologies = ({ productdata }: productdata) => {
             ></Productcard>
           ))}
         </div>
-        <YourStack setproducts={setproducts} hendeldelete={hendeldelete} alldelete={alldelete}></YourStack>
+        <YourStack
+          setproducts={setproducts}
+          hendeldelete={hendeldelete}
+          alldelete={alldelete}
+        ></YourStack>
       </div>
     </section>
   );

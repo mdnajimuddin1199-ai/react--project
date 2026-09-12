@@ -1,10 +1,11 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Navbar from "./components/Nav";
 import Hero from "./components/Hero";
 import Technologies from "./components/technologies";
 import Footer from "./components/footer";
+import { ToastContainer } from "react-toastify";
 
 const productdatapromis = async()=>{
 let res = await fetch("./data.json");
@@ -17,9 +18,13 @@ console.log(productdata);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    <ToastContainer />
     <Navbar></Navbar>
     <Hero></Hero>
-    <Technologies productdata={productdata}></Technologies>
+    <Suspense fallback='Loding...'>
+      <Technologies productdata={productdata}></Technologies>
+    </Suspense>
+
     <Footer></Footer>
   </StrictMode>,
 );

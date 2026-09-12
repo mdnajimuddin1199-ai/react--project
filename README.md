@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+                        
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# My Project
 
-Currently, two official plugins are available:
+A simple and responsive web project made for practice and learning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies
 
-## React Compiler
+* React
+* TypeScript
+* CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+* Responsive design
+* User-friendly interface
+* Easy to use
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+Ans 1 = JSX is a JavaScript extension that allows us to write HTML and JavaScript together.
+Ans 2 = Props are used to pass data from parent to child. State is data managed inside a component.
+Ans 3 = useState stores and updates data in a component. I used it to manage my product and stack data.
+Ans 4 = useEffect runs code aftr a component renders. I used it to load JSON data.
+Ans 5 = we have to give unique key value It's help for identify each items 
+Ans 6 = Conditional rendering means showing something based on a condition. I used it to show an empty stack message when the stack is empty.
+Ans 7 = we can pass data perent to child  as a  props.  But child can't send to parent.  by using calling function that received parent as props
