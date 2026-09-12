@@ -7,7 +7,7 @@ function Hero() {
         <div className="flex-1 text-center md:text-left space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
             Build Your Ideal <br className="hidden sm:inline" />
-            <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
               Development Stack
             </span>
           </h1>
@@ -20,7 +20,7 @@ function Hero() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-            <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white font-medium px-6 py-3 rounded-xl shadow-md hover:opacity-95 transition">
+            <button className="bg-linear-to-r from-orange-500 to-pink-500 text-white font-medium px-6 py-3 rounded-xl shadow-md hover:opacity-95 transition">
               Explore Technologies
             </button>
             <button className="text-gray-700 font-medium px-6 py-3 rounded-xl border border-gray-200 hover:bg-gray-50 transition">
